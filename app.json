@@ -1,0 +1,86 @@
+{
+  "expo": {
+    "name": "DOR.IA",
+    "slug": "doria-mobile-novo",
+    "owner": "plannymkt",
+    "version": "1.12.1",
+    "orientation": "portrait",
+    "icon": "./assets/images/logoApp.png",
+    "scheme": "doriamobilenovo",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "br.com.doria.app",
+      "buildNumber": "6",
+      "icon": "./assets/images/logoApp.png",
+      "infoPlist": {
+        "CFBundleDisplayName": "DOR.IA",
+        "CFBundleName": "DOR.IA",
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": ["doriamobilenovo"]
+          }
+        ],
+        "LSApplicationQueriesSchemes": ["mailto"],
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.anonymous.doriamobilenovo",
+      "versionCode": 25,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logoApp.png",
+        "backgroundColor": "#2563FF"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/logoApp.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#3B82F6",
+          "image": "./assets/images/doriaIcone.png",
+          "imageWidth": 180,
+          "resizeMode": "contain"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/notification-icon.png",
+          "color": "#2563FF",
+          "defaultChannel": "default",
+          "enableBackgroundRemoteNotifications": false
+        }
+      ],
+      "expo-secure-store",
+      "@react-native-community/datetimepicker"
+    ],
+    "experiments": {},
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7a5ccc3c-b7c3-4092-ade6-af40cd32a24b"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/7a5ccc3c-b7c3-4092-ade6-af40cd32a24b"
+    }
+  }
+}
